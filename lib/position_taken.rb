@@ -2,10 +2,11 @@
 
 def position_taken?(board, index)
   if
-    board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] || ["", "", "", "", "", "", "", "", ""] ||
-    [nil, " ", " ", " ", " ", " ", " ", " ", " "]
-    index == [0]
-  elsif
-    board == ["X", " ", " ", " ", " ", " ", " ", " ", "O"]
-end
+    board[index] == " " || "" || nil
+    false
+  else
+    board[index] == "X" || "O"
+    true
+
+  end
 end
