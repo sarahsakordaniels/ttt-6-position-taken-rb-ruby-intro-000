@@ -7,6 +7,5 @@ def position_taken?(board, index)
     index == [0]
   elsif
     board == ["X", " ", " ", " ", " ", " ", " ", " ", "O"]
-    true
 end
 end
